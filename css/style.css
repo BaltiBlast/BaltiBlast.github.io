@@ -122,6 +122,21 @@
 }
 
 /* --------------------------------------------------------- */
+/* EXPERIENCE SECTION */
+
+.experiences__category {
+  margin-bottom: 50px;
+}
+
+.experiences__description {
+  font-size: clamp(1em, 5vw, 1.8rem);
+}
+
+.experiences__list {
+  font-size: clamp(1em, 5vw, 1.3rem);
+}
+
+/* --------------------------------------------------------- */
 /* BREACKPOINTS */
 
 @media only screen and (max-width: 1024px) {
