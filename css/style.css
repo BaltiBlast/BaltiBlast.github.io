@@ -1,8 +1,53 @@
 :root {
-  --primary-color: #231f20;
-  --secondary-color: #cf6953;
-  --white-color: #fff;
-  --black-color: #000;
-  --warning-color: #c25b5b;
-  --success-color: #6ba688;
+  /* SIZES */
+  --padding-section: 150px;
+}
+
+/* --------------------------------------------------------- */
+/* GENERIC VALUE */
+.padding-section {
+  padding: var(--padding-section);
+  box-sizing: border-box;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/* --------------------------------------------------------- */
+/* LANDING SECTION */
+.landing {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing__title {
+  font-size: clamp(1.5em, 5vw, 3rem);
+  line-height: 1;
+}
+
+.landing__fullname {
+  font-size: clamp(4em, 5vw, 8rem);
+  line-height: 0.7;
+}
+
+.landing__arrow {
+  animation: bounce 1.5s infinite ease-in-out;
+  display: inline-block;
+}
+
+/* --------------------------------------------------------- */
+/* ANIMATION */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
