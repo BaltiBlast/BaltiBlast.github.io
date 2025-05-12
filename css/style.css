@@ -12,13 +12,19 @@
   box-sizing: border-box;
 }
 
-.title-section-underline {
+.title-section-underline-primary {
   position: relative;
   padding-bottom: 5px;
   margin-bottom: 50px;
 }
 
-.title-section-underline::after {
+.title-section-underline-white {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+}
+
+.title-section-underline-primary::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -26,6 +32,16 @@
   width: 100%;
   height: 2px;
   background-color: var(--primary-color);
+}
+
+.title-section-underline-white::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white-color);
 }
 
 .txt-center {
@@ -92,6 +108,17 @@
 .about__text p {
   font-size: clamp(1em, 5vw, 1.8rem);
   line-height: 1.5;
+}
+
+/* --------------------------------------------------------- */
+/* SKILLS SECTION */
+
+.skills__category {
+  margin-bottom: 50px;
+}
+
+.skills__list {
+  font-size: clamp(1em, 5vw, 1.8rem);
 }
 
 /* --------------------------------------------------------- */

@@ -1,0 +1,51 @@
+const skillsData = [
+  {
+    title: "front-end",
+    listSkillsCategory: [
+      "HTML",
+      "CSS",
+      "SASS",
+      "LESS",
+      "Bootstrap",
+      "Bulma",
+      "Pico",
+      "AntD",
+      "Javascript",
+      "React",
+      "Vue",
+    ],
+  },
+  {
+    title: "back-end / bdd / ci/cd",
+    listSkillsCategory: [
+      "Node",
+      "Express",
+      "EJS",
+      "PUG",
+      "PostgreSQL",
+      "Airtable",
+      "Firebase",
+      "Render",
+      "Vercel",
+      "Gitlab",
+      "Gitkraken",
+    ],
+  },
+  {
+    title: "les petits +",
+    listSkillsCategory: ["Electron", "Linux", "Windows", "Unreal Engine 5", "Wordpress", "Scrum", "Suite Google"],
+  },
+  {
+    title: "multimedias",
+    listSkillsCategory: [
+      "Photoshop",
+      "Illustrator",
+      "Lightroom",
+      "After Effect",
+      "Premiere Pro",
+      "Sony Vegas Pro",
+      "Figma",
+      "FL Studio",
+    ],
+  },
+];
