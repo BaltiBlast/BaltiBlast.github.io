@@ -111,29 +111,48 @@
 }
 
 /* --------------------------------------------------------- */
-/* SKILLS SECTION */
+/* SKILLS & EXPERIENCES SECTION */
 
-.skills__category {
-  margin-bottom: 50px;
-}
-
-.skills__list {
-  font-size: clamp(1em, 5vw, 1.8rem);
-}
-
-/* --------------------------------------------------------- */
-/* EXPERIENCE SECTION */
-
+.skills__category,
 .experiences__category {
   margin-bottom: 50px;
 }
 
+.skills__list,
 .experiences__description {
   font-size: clamp(1em, 5vw, 1.8rem);
 }
 
 .experiences__list {
   font-size: clamp(1em, 5vw, 1.3rem);
+}
+
+/* --------------------------------------------------------- */
+/* CONTACTS SECTION */
+
+.contacts__category {
+  margin-bottom: 30px;
+}
+
+.contacts__description {
+  font-size: clamp(1em, 5vw, 1.8rem);
+}
+
+.contacts__list {
+  font-size: clamp(1em, 5vw, 1.5rem);
+}
+
+.contacts__link {
+  text-decoration: none;
+}
+
+.contacts__link:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.contacts__link:visited {
+  color: white;
 }
 
 /* --------------------------------------------------------- */

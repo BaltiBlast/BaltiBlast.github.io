@@ -2,6 +2,7 @@ const app = {
   init: () => {
     skillsMethods.skillsInit();
     experiencesMethods.experiencesInit();
+    contactsMethods.contactsInit();
   },
 };
 

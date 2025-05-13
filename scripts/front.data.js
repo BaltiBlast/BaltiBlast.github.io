@@ -16,7 +16,7 @@ const skillsData = [
     ],
   },
   {
-    title: "back-end / bdd / ci/cd",
+    title: "back-end / bdd / cicd",
     listSkillsCategory: [
       "Node",
       "Express",
@@ -90,5 +90,33 @@ const experiencesData = [
       "J'apprends l'anglais depuis plusieurs années à l'aide d'applications et de la documentation liée aux langages que j'utilise. J'ai une bonne compréhension écrite, tant pour les échanges quotidiens que pour le jargon technique du métier. En revanche, j'éprouve encore des difficultés à converser oralement avec un interlocuteur réel. Par convention, j'utilise toujours l'anglais à travers le code que je mets en place.",
     skills: [],
     technologies: [],
+  },
+];
+
+const contactsData = [
+  {
+    type: "Téléphone",
+    value: "06 43 18 02 91",
+    isLink: false,
+  },
+  {
+    type: "Email",
+    value: "fougeray.florian@gmail.com",
+    isLink: false,
+  },
+  {
+    type: "Adresse",
+    value: "Longeville Les Metz - 57050",
+    isLink: false,
+  },
+  {
+    type: "Linkedin",
+    value: "https://www.linkedin.com/in/florian-fougeray/",
+    isLink: true,
+  },
+  {
+    type: "Github",
+    value: "https://github.com/BaltiBlast",
+    isLink: true,
   },
 ];
