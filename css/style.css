@@ -142,17 +142,17 @@
   font-size: clamp(1em, 5vw, 1.5rem);
 }
 
-.contacts__link {
+.contacts__link,
+.contacts__link:visited,
+.contacts__link:link,
+.contacts__link:active {
+  color: var(--white-color);
   text-decoration: none;
 }
 
 .contacts__link:hover {
   opacity: 0.9;
   text-decoration: underline;
-}
-
-.contacts__link:visited {
-  color: white;
 }
 
 /* --------------------------------------------------------- */
