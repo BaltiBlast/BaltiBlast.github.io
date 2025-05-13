@@ -1,9 +1,10 @@
 const app = {
   init: () => {
+    landingMethods.landingInit();
     skillsMethods.skillsInit();
     experiencesMethods.experiencesInit();
-    contactsMethods.contactsInit();
     aboutMethods.aboutInit();
+    contactsMethods.contactsInit();
   },
 };
 

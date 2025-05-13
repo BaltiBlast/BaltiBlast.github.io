@@ -73,6 +73,11 @@
   display: inline-block;
 }
 
+.landing__easter-egg {
+  font-size: clamp(1em, 5vw, 1.5rem);
+  color: var(--white-color);
+}
+
 /* --------------------------------------------------------- */
 /* ABOUT SECTION */
 
