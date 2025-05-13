@@ -45,6 +45,7 @@ const skillsData = [
       "Premiere Pro",
       "Sony Vegas Pro",
       "Figma",
+      "Fusion 360",
       "FL Studio",
     ],
   },

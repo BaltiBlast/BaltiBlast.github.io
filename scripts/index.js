@@ -3,6 +3,7 @@ const app = {
     skillsMethods.skillsInit();
     experiencesMethods.experiencesInit();
     contactsMethods.contactsInit();
+    aboutMethods.aboutInit();
   },
 };
 
