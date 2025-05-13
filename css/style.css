@@ -98,6 +98,23 @@
   font-size: clamp(1em, 5vw, 1.8rem);
 }
 
+.skills__figma {
+  font-size: clamp(1em, 5vw, 1.6rem);
+  margin-top: 130px;
+}
+
+.skills__link:visited,
+.skills__link:link,
+.skills__link:active {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.skills__link:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
 .experiences__list {
   font-size: clamp(1em, 5vw, 1.3rem);
 }
