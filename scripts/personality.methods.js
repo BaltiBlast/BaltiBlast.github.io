@@ -6,31 +6,24 @@ const personalityGameMethods = {
   displayGame: () => {
     const gameContainer = document.getElementById("game");
 
-    // Vérifier si le conteneur existe
-    if (!gameContainer) return;
-
-    // Nettoyer le conteneur si nécessaire
-    gameContainer.innerHTML = "";
-
     // Créer un élément pour chaque trait
     personalityGameData.forEach((traitItem, traitIndex) => {
       // Créer le conteneur principal du trait
       const traitContainer = document.createElement("div");
+      traitContainer.classList.add("personality__trait__container");
       traitContainer.dataset.traitIndex = traitIndex;
 
       // Créer et ajouter le titre du trait
-      const traitTitle = document.createElement("h3");
-      traitTitle.textContent = traitItem.trait;
+      const traitTitle = createTraitTitle(traitItem);
       traitContainer.appendChild(traitTitle);
 
       // Créer le conteneur des options
       const optionsContainer = document.createElement("div");
+      optionsContainer.classList.add("personality__options__container");
 
       // Créer chaque option
       traitItem.options.forEach((option, optionIndex) => {
-        const optionElement = document.createElement("div");
-        optionElement.dataset.traitIndex = traitIndex;
-        optionElement.dataset.optionIndex = optionIndex;
+        const optionElement = createOption(optionIndex, traitIndex);
 
         // Label de l'option
         const optionLabel = document.createElement("span");
@@ -52,6 +45,25 @@ const personalityGameMethods = {
       gameContainer.appendChild(traitContainer);
     });
   },
+
+  // ------------------------------------------------------------------------------------------------- //
+  // Create trait title ✅
+  createTraitTitle: (trait) => {
+    const traitTitle = document.createElement("h3");
+    traitTitle.classList.add("uppercase", "secondary-color", "lato-bold");
+    traitTitle.textContent = trait.trait;
+    return traitTitle;
+  },
+
+  // ------------------------------------------------------------------------------------------------- //
+  // Create personality option ✅
+  createOption: (optionIndex, traitIndex) => {
+    const optionElement = document.createElement("div");
+    optionElement.classList.add("personality__option");
+    optionElement.dataset.traitIndex = traitIndex;
+    optionElement.dataset.optionIndex = optionIndex;
+    return optionElement;
+  },
 };
 
-const { displayGame } = personalityGameMethods;
+const { displayGame, createTraitTitle, createOption } = personalityGameMethods;
