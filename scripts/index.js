@@ -5,6 +5,7 @@ const app = {
     experiencesMethods.experiencesInit();
     aboutMethods.aboutInit();
     contactsMethods.contactsInit();
+    personalityGameMethods.gameInit();
   },
 };
 

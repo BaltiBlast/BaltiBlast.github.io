@@ -121,3 +121,72 @@ const contactsData = [
     isLink: true,
   },
 ];
+
+const personalityGameData = [
+  {
+    trait: "Perfectionniste",
+    options: [
+      {
+        perspective: "Positif",
+        description: "Produit un travail soigné et de haute qualité, attentif aux détails.",
+      },
+      {
+        perspective: "À considérer",
+        description: "Peut prendre plus de temps pour finaliser les tâches, parfois trop focalisé sur les détails.",
+      },
+    ],
+  },
+  {
+    trait: "Autonome",
+    options: [
+      {
+        perspective: "Positif",
+        description: "Capable de travailler efficacement sans supervision constante, prend des initiatives.",
+      },
+      {
+        perspective: "À considérer",
+        description: "Parfois réticent à demander de l'aide, peut trop s'isoler dans certains projets.",
+      },
+    ],
+  },
+  {
+    trait: "Créatif",
+    options: [
+      {
+        perspective: "Positif",
+        description: "Propose des solutions originales et innovantes, pense en dehors des sentiers battus.",
+      },
+      {
+        perspective: "À considérer",
+        description: "Peut s'écarter des méthodes conventionnelles, parfois au détriment de l'efficacité.",
+      },
+    ],
+  },
+  {
+    trait: "Analytique",
+    options: [
+      {
+        perspective: "Positif",
+        description:
+          "Prend des décisions basées sur des données et une réflexion approfondie, évite les erreurs impulsives.",
+      },
+      {
+        perspective: "À considérer",
+        description: "Peut trop réfléchir avant d'agir, parfois paralysé par l'analyse.",
+      },
+    ],
+  },
+  {
+    trait: "Direct/Franc",
+    options: [
+      {
+        perspective: "Positif",
+        description: "Communication claire et honnête, pas de non-dits qui créent des malentendus.",
+      },
+      {
+        perspective: "À considérer",
+        description: "Peut paraître abrupt ou manquer de diplomatie dans certaines situations sensibles.",
+      },
+    ],
+  },
+];
