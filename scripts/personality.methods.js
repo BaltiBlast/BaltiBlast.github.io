@@ -22,13 +22,13 @@ const personalityGameMethods = {
   // Create Trait ✅
   createTrait: () => {
     const gameContainer = document.getElementById("game");
-    gameContainer.classList.add("game-traits-container");
+    gameContainer.classList.add("game__traits__container");
 
     // Create traits
     personalityGameData.forEach((traitItem, traitIndex) => {
       // Trait container
       const traitContainer = document.createElement("div");
-      traitContainer.classList.add("game-trait");
+      traitContainer.classList.add("game__traits");
       traitContainer.dataset.traitIndex = traitIndex;
 
       // Trait title
@@ -49,7 +49,7 @@ const personalityGameMethods = {
   // Create trait title ✅
   createTraitTitle: (traitItem) => {
     const traitTitle = document.createElement("h4");
-    traitTitle.classList.add("lato-bold", "game-trait-title", "secondary-color");
+    traitTitle.classList.add("lato-bold", "game__traits__title", "secondary-color");
     traitTitle.textContent = traitItem.trait;
     return traitTitle;
   },
@@ -58,17 +58,17 @@ const personalityGameMethods = {
   // Create options ✅
   createTraitOptions: (traitItem, traitIndex) => {
     const optionsContainer = document.createElement("div");
-    optionsContainer.classList.add("game-options");
+    optionsContainer.classList.add("game__options");
 
     traitItem.options.forEach((option, optionIndex) => {
       const optionElement = document.createElement("div");
-      optionElement.classList.add("game-option");
+      optionElement.classList.add("game__option");
 
       // Add class based on perspective
       if (option.perspective === "Positif") {
-        optionElement.classList.add("game-option-positive");
+        optionElement.classList.add("game__option__positive");
       } else {
-        optionElement.classList.add("game-option-consider");
+        optionElement.classList.add("game__option__consider");
       }
 
       optionElement.dataset.traitIndex = traitIndex;
@@ -96,7 +96,7 @@ const personalityGameMethods = {
       optionElement.addEventListener("click", (e) => {
         // Unfocus all other options
         document
-          .querySelectorAll(`.game-option[data-trait-index="${traitIndex}"]`)
+          .querySelectorAll(`.game__option[data-trait-index="${traitIndex}"]`)
           .forEach((opt) => opt.classList.remove("selected"));
 
         // Focus the clicked option
@@ -115,7 +115,7 @@ const personalityGameMethods = {
   // ------------------------------------------------------------------------------------------------- //
   // Check if all traits are selected ✅
   checkResults: () => {
-    const selectedOptions = document.querySelectorAll(".game-option.selected");
+    const selectedOptions = document.querySelectorAll(".game__option.selected");
     if (selectedOptions.length === personalityGameData.length) {
       showResults();
     }
@@ -124,7 +124,7 @@ const personalityGameMethods = {
   // ------------------------------------------------------------------------------------------------- //
   // Display the results div ✅
   showResults: () => {
-    const resultsContainer = document.getElementById("game-results");
+    const resultsContainer = document.getElementById("game__results");
     if (!resultsContainer) return;
 
     resultsContainer.innerHTML = "";
@@ -141,8 +141,8 @@ const personalityGameMethods = {
     let considerCount = 0;
 
     // Count the selected options
-    document.querySelectorAll(".game-option.selected").forEach((option) => {
-      if (option.classList.contains("game-option-positive")) {
+    document.querySelectorAll(".game__option.selected").forEach((option) => {
+      if (option.classList.contains("game__option__positive")) {
         positiveCount++;
       } else {
         considerCount++;
@@ -151,7 +151,7 @@ const personalityGameMethods = {
 
     // Create the counters
     const counterContainer = document.createElement("div");
-    counterContainer.classList.add("game-results-counter");
+    counterContainer.classList.add("game__results__counter");
 
     // Counters data
     const countersData = [
@@ -170,14 +170,14 @@ const personalityGameMethods = {
     // Create the counters
     countersData.forEach((counterData) => {
       const counter = document.createElement("div");
-      counter.classList.add(`counter-${counterData.type}`);
+      counter.classList.add(`counter__${counterData.type}`);
 
       const numberElement = document.createElement("span");
-      numberElement.classList.add("counter-number");
+      numberElement.classList.add("counter__number");
       numberElement.textContent = counterData.count;
 
       const labelElement = document.createElement("span");
-      labelElement.classList.add("counter-label", "lato-light");
+      labelElement.classList.add("counter__label", "lato-light");
       labelElement.textContent = counterData.label;
 
       counter.append(numberElement, labelElement);
@@ -193,7 +193,7 @@ const personalityGameMethods = {
     // Reset button
     const resetButton = document.createElement("button");
     resetButton.textContent = "Recommencer";
-    resetButton.classList.add("game-button");
+    resetButton.classList.add("game__button");
     resetButton.addEventListener("click", personalityGameMethods.resetGame);
 
     resultsContainer.appendChild(resetButton);
@@ -203,7 +203,7 @@ const personalityGameMethods = {
   // Result message ✅
   resultMessage: (positiveCount, considerCount) => {
     const messageConclusion = document.createElement("p");
-    messageConclusion.classList.add("lato-light", "game-conclusion");
+    messageConclusion.classList.add("lato-light", "game__conclusion");
     if (positiveCount > considerCount) {
       messageConclusion.textContent = "Vous avez une vision plutôt positive de mon profil. Merci pour votre intérêt!";
     } else if (positiveCount < considerCount) {
@@ -218,11 +218,11 @@ const personalityGameMethods = {
   // ------------------------------------------------------------------------------------------------- //
   // Game reset ✅
   resetGame: () => {
-    document.querySelectorAll(".game-option").forEach((option) => {
+    document.querySelectorAll(".game__option").forEach((option) => {
       option.classList.remove("selected");
     });
 
-    const resultsContainer = document.getElementById("game-results");
+    const resultsContainer = document.getElementById("game__results");
     if (resultsContainer) {
       resultsContainer.style.display = "none";
     }
