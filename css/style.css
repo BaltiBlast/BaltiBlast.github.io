@@ -143,7 +143,7 @@
 .contacts__link:visited,
 .contacts__link:link,
 .contacts__link:active {
-  color: var(--white-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -280,6 +280,7 @@
   border-left: 3px solid var(--secondary-color);
   background-color: rgba(255, 255, 255, 0.03);
   text-align: center;
+  display: none;
 }
 
 /* Styles pour le compteur de résultats */

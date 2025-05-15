@@ -124,15 +124,16 @@ const contactsData = [
 
 const personalityGameData = [
   {
-    trait: "Perfectionniste",
+    trait: "Perfectionniste/Minutieux",
     options: [
       {
         perspective: "Positif",
-        description: "Produit un travail soigné et de haute qualité, attentif aux détails.",
+        description: "Produit un travail soigné et de qualité, attentif aux détails et à la finition.",
       },
       {
         perspective: "À considérer",
-        description: "Peut prendre plus de temps pour finaliser les tâches, parfois trop focalisé sur les détails.",
+        description:
+          "Peut prendre plus de temps pour finaliser les tâches, parfois trop focalisé sur des détails mineurs.",
       },
     ],
   },
@@ -141,11 +142,13 @@ const personalityGameData = [
     options: [
       {
         perspective: "Positif",
-        description: "Capable de travailler efficacement sans supervision constante, prend des initiatives.",
+        description:
+          "Capable de travailler efficacement sans supervision constante, prend des initiatives pertinentes.",
       },
       {
         perspective: "À considérer",
-        description: "Parfois réticent à demander de l'aide, peut trop s'isoler dans certains projets.",
+        description:
+          "Parfois réticent à demander de l'aide, peut s'isoler et manquer de synchronisation avec l'équipe.",
       },
     ],
   },
@@ -158,7 +161,8 @@ const personalityGameData = [
       },
       {
         perspective: "À considérer",
-        description: "Peut s'écarter des méthodes conventionnelles, parfois au détriment de l'efficacité.",
+        description:
+          "Peut s'écarter des méthodes conventionnelles, parfois au détriment de l'efficacité ou de la simplicité.",
       },
     ],
   },
@@ -168,24 +172,55 @@ const personalityGameData = [
       {
         perspective: "Positif",
         description:
-          "Prend des décisions basées sur des données et une réflexion approfondie, évite les erreurs impulsives.",
+          "Prend des décisions basées sur des données et une réflexion approfondie, anticipe les problèmes potentiels.",
       },
       {
         perspective: "À considérer",
-        description: "Peut trop réfléchir avant d'agir, parfois paralysé par l'analyse.",
+        description:
+          "Peut trop réfléchir avant d'agir, parfois ralenti par l'excès d'analyse au détriment de l'action.",
       },
     ],
   },
   {
-    trait: "Direct/Franc",
+    trait: "Sincère",
     options: [
       {
         perspective: "Positif",
-        description: "Communication claire et honnête, pas de non-dits qui créent des malentendus.",
+        description: "Communication transparente et honnête, instaure un climat de confiance et de respect mutuel.",
       },
       {
         perspective: "À considérer",
-        description: "Peut paraître abrupt ou manquer de diplomatie dans certaines situations sensibles.",
+        description:
+          "Peut paraître trop direct ou manquer de tact dans certaines situations qui nécessiteraient plus de diplomatie.",
+      },
+    ],
+  },
+  {
+    trait: "Adaptable",
+    options: [
+      {
+        perspective: "Positif",
+        description:
+          "S'ajuste rapidement aux changements de contexte, de priorités ou de technologies, flexible face aux imprévus.",
+      },
+      {
+        perspective: "À considérer",
+        description:
+          "Peut parfois manquer de constance dans sa méthode de travail ou avoir du mal à établir des routines stables.",
+      },
+    ],
+  },
+  {
+    trait: "Curieux",
+    options: [
+      {
+        perspective: "Positif",
+        description: "Constamment en apprentissage, explore de nouvelles technologies et approches avec enthousiasme.",
+      },
+      {
+        perspective: "À considérer",
+        description:
+          "Peut se disperser en explorant trop de directions différentes ou en changeant fréquemment de centre d'intérêt.",
       },
     ],
   },
